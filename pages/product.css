@@ -1,0 +1,70 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+}
+
+.click_product {
+    background-color: #f1f2f4;
+}
+
+main {
+    background-color: rgb(236, 237, 236) !important;
+}
+
+#leftDiv {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#rightDiv {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.simillar_products {
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: #f1f2f4;
+}
+
+.randomItems {
+    padding: 30px 0px;
+    background-color: #f1f2f4;
+    padding-bottom: 20px;
+}
+
+.popup {
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #888;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+    max-width: 200px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    #leftDiv img {
+        height: 430px;
+        width: 430px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    html {
+        font-size: 1rem;
+    }
+
+    #leftDiv img {
+        transform: scale(1.5);
+        height: 400px;
+        width: 400px;
+    }
+}

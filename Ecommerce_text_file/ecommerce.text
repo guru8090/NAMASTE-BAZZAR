@@ -1,0 +1,29 @@
+I had use bootstrap for navbar ,image_sliding & product arragement also.
+For all product image height is"180px" & width is 200px;
+for fetching the products i use Dmmy json website & the API key was use that is "https://dummyjson.com/products/category/${catagory}?limit=4"
+Here limit=4 use because i want only 4 product for our front screen
+For background-color i use  #f1f2f4.
+The font family i use that is 'Roboto', sans-serif;
+For h2 i use Poppins, sans-serif this font family.
+".text_color{
+    background: linear-gradient(to right, #ff007a, #ff3366, #ff6600);
+    background-clip: text;
+    color:transparent;
+}" This property is very important to change the text-color as a mmix color
+Media query is use by my own for products.
+
+commom.js=inside this file add to cart logic is present.cart section is common for every where that mean you add the cart section what ever you want .thats why we use common .js
+
+const cartItems=JSON.parse(localStorage.getItem('cartItems')) ?? [];
+// if right only null array([]) then after refreshing again common js will load for that time cartItemes is also become empty,so i use above technique
+
+localStorage.setItem('cartItems', JSON.stringify(cartItems));
+// in localStorage any thing is store in the String Format ,so i convert first Cartitem object into String
+
+count.textContent=cartItems.length =======> this after the "localStorage.setItem('cartItems', JSON.stringify(cartItems));" line
+// here count.textContent use whenever you click the add to cart button at that time inside the cart what ever the items present immidiately same no of count value also showing 
+
+count.textContent=cartItems.length =======> It is inside the addtoCart() function
+// here after refreshing the page inside the cart value what ever the items are present that no of count value showing means you refresh again again for showing the actual count value of the cart
+
+product.js=for creating rating & reviews number is not in the dummyJson API key ,So i create a function for rating & reviews But i think it is not a good approach
